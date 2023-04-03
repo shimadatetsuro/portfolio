@@ -1,0 +1,53 @@
+*,*::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    align-items: center;
+}
+caption,table {
+    margin: 0 auto;
+}
+caption {
+    font-weight: 900;
+    font-size: 50px;
+}
+table{
+    width: 100%;
+    height: 600px;
+    table-layout: fixed;
+    border-collapse:collapse;		/*セル同士の間に隙間を空けない*/
+
+}
+th,td {
+    border: solid 1px rgb(0, 0, 0);
+    font-size: (100% - 2px);
+}
+th{
+    vertical-align: middle;
+}
+td{
+    text-align: left;
+    vertical-align: top;
+    height: 57px;
+}
+td span.done {
+    text-decoration: line-through;
+  }
+thead tr th{
+    background-color: rgb(78, 77, 77);
+    color: #ffffff;
+}
+
+thead tr :nth-child(7){
+    color: blue;
+}
+tr :nth-child(1){
+    color: red;
+}
+
+/* 削除フォーム */
+ul.delite-done{
+    display: flex;
+    list-style-type: none;
+    align-items: flex-end;
+}
